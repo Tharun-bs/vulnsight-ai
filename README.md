@@ -1,73 +1,35 @@
-# Welcome to your Lovable project
+🔐 VulnSight-AI: The Predictive Cyber-Cognition Engine
+🚀 Overview
 
-## Project info
+Organizations today face an overwhelming flood of vulnerabilities and cyber threats. Traditional tools are reactive, often leading to alert fatigue, delayed responses, and resource misallocation.
 
-**URL**: https://lovable.dev/projects/bbe027da-8c9d-488e-adf8-e242c6d79f5a
+VulnSight-AI shifts cybersecurity from firefighting to foresight. It’s an AI-powered analytics engine that predicts and prioritizes the most probable future cyber risks, enabling teams to act before exploitation occurs.
 
-## How can I edit this code?
+🎯 Key Features
 
-There are several ways of editing your application.
+Vulnerability Nexus Mapping (VNM):
+Builds a knowledge graph connecting assets, CVEs, exploits, and threat intelligence to reveal possible attack paths.
 
-**Use Lovable**
+Predictive Patch Prioritization (PPP):
+AI-assisted scoring that goes beyond CVSS — ranking vulnerabilities using exploitability signals from OSINT feeds, dark web chatter (simulated), and asset criticality.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bbe027da-8c9d-488e-adf8-e242c6d79f5a) and start prompting.
+Explainable AI Insights:
+Provides human-readable rationales for prioritization decisions (e.g., “High criticality asset + active exploitation in the wild”).
 
-Changes made via Lovable will be committed automatically to this repo.
+Interactive Dashboard:
 
-**Use your preferred IDE**
+Top 5 predicted exploitable vulnerabilities
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Asset-level attack path visualization
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+CSV export of prioritized vulnerability list
 
-Follow these steps:
+🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Backend & AI Logic: Python, FastAPI, Pandas, scikit-learn, NetworkX
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Database: SQLite (MVP-ready, extensible to PostgreSQL/MongoDB)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Frontend: HTML/JS (React optional), Chart.js/D3.js for visualization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bbe027da-8c9d-488e-adf8-e242c6d79f5a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Deployment: Docker (optional for hackathon demo)
